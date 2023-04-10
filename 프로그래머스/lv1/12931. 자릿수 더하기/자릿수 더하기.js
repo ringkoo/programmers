@@ -2,8 +2,6 @@
 // 예를들어 N = 123이면 1 + 2 + 3 = 6을 return 하면 됩니다.
 
 function solution(n) {
-    let answer = n.toString().split('').map((a) => parseInt(a)).reduce((a, b) => a + b)
-    console.log(answer)
-    return answer;
+    return n.toString().split('').map((a) => parseInt(a)).reduce((a, b) => a + b)
 }
 console.log(solution(123)) // 6
