@@ -1,18 +1,17 @@
 function solution(s) {
     
     
-    s = s.replace(/zero/gi, '0')
-    s = s.replace(/one/gi, '1')
-    s = s.replace(/two/gi, '2')
-    s = s.replace(/three/gi, '3')
-    s = s.replace(/four/gi, '4')
-    s = s.replace(/five/gi, '5')
-    s = s.replace(/six/gi, '6')
-    s = s.replace(/seven/gi, '7')
-    s = s.replace(/eight/gi, '8')
-    s = s.replace(/nine/gi, '9')
+    s = s.replace(/zero/g, '0')
+    s = s.replace(/one/g, '1')
+    s = s.replace(/two/g, '2')
+    s = s.replace(/three/g, '3')
+    s = s.replace(/four/g, '4')
+    s = s.replace(/five/g, '5')
+    s = s.replace(/six/g, '6')
+    s = s.replace(/seven/g, '7')
+    s = s.replace(/eight/g, '8')
+    s = s.replace(/nine/g, '9')
     
-    //s의 맨앞에 나오는 문자나 숫자가 0일때 
     
     return parseInt(s)
 }
