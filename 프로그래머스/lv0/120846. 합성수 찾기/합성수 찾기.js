@@ -1,12 +1,13 @@
 function solution(n) {
-    let dp = new Array(n+1).fill(1)
-    for(let i = 2 ; i <= n ; i++){
-        if(dp[i]){
-            for(let j = 2 ; i*j <= n ; j++){
-                dp[i*j] = 0
+    var answer = 0;
+    for(let i = 4; i <= n; i++){
+        for(let j = 2; j < i; j++){
+            if(i % j === 0){
+                answer += 1;
+                break;
             }
         }
     }
 
-    return dp.filter(el => el === 0).length
+    return answer;
 }
