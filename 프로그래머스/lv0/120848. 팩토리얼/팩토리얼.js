@@ -1,11 +1,6 @@
 function solution(n) {
-  let i = 1;
-  let factorial = 1;
-
-  while (factorial <= n) {
-    i++;
-    factorial *= i;
-  }
-
-  return i - 1;
+    let i = 1;
+    let f = 1;
+    while (f*i < n) f*=++i;
+    return i;
 }
